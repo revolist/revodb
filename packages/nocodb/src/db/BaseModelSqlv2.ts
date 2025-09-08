@@ -4122,7 +4122,9 @@ class BaseModelSqlv2 implements IBaseModelSqlV2 {
         if (
           !allowSystemColumn &&
           column.system &&
-          ![UITypes.ForeignKey, UITypes.Order].includes(column.uidt)
+          ![UITypes.ForeignKey, UITypes.Order, UITypes.Meta].includes(
+            column.uidt,
+          )
         ) {
           NcError.badRequest(
             `Column "${column.title}" is system column and cannot be updated`,
