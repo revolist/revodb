@@ -198,11 +198,6 @@ const uiTypes: UiTypesType[] = [
     name: UITypes.LastModifiedBy,
     icon: iconMap.cellSystemUser,
   },
-  {
-    name: 'TrackModifications',
-    icon: iconMap.cellSystemDate,
-    virtual: 1,
-  },
 ]
 
 const getUIDTIcon = (uidt: UITypes | string) => {
