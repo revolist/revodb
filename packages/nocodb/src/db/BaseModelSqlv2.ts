@@ -6103,11 +6103,7 @@ class BaseModelSqlv2 implements IBaseModelSqlV2 {
           (c.column_name &&
             (
               c.colOptions as TrackModificationsColumnOptions
-            )?.triggerColumnIds?.some(
-              (id) => updatedColIds.includes(id)
-            )
-          )
-        ),
+            )?.triggerColumnIds?.some((id) => updatedColIds.includes(id)))),
     );
 
     for (const lastModifiedTimeColumn of lastModifiedTimeColumns) {
