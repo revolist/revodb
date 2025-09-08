@@ -178,8 +178,7 @@ function prepareMetaUpdateQuery({
        ])}::text), '{}'::jsonb))
        || ${jsonObjQuery})`;
       })
-      .join(' || ')}
-            `,
+      .join(' || ')}`,
     {
       column: metaColumn.column_name,
     },
